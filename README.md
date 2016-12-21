@@ -1,3 +1,4 @@
+***
 #### 章鱼彩票ZYService iOS端使用说明
 ##### 一、准备工作
 1、引入ZYService.framework  
@@ -96,3 +97,7 @@ ZYQueryBaseInfo *queryBaseInfo = [ZYQueryBaseInfo baseInfo];
                        failureHandle:failureHandle];
 }
 ```
+
+***
+
+#### 章鱼彩票ZYService Android端使用说明
