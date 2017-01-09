@@ -12,8 +12,8 @@
 #import "ZYServiceError.h"
 
 
-typedef void(^QuerySuccessHandle) (NSURLSessionDataTask *task, ZYQueryResponse *response);
-typedef void(^QueryFailureHandle) (NSURLSessionDataTask *task, ZYServiceError *error);
+typedef void(^QuerySuccessHandle) (ZYQueryResponse *response);
+typedef void(^QueryFailureHandle) (ZYServiceError *error);
 @interface ZYQueryService : NSObject
 
 /**

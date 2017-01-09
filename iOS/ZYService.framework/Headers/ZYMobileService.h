@@ -15,8 +15,8 @@
 #import "ZYServiceUserInfo.h"
 #import "ZYMobileBaseInfo.h"
 
-typedef void(^MobileSuccessHandle) (NSURLSessionDataTask *task, ZYMobileResponse *response);
-typedef void(^MobileFailureHandle) (NSURLSessionDataTask *task, ZYServiceError *error);
+typedef void(^MobileSuccessHandle) (ZYMobileResponse *response);
+typedef void(^MobileFailureHandle) (ZYServiceError *error);
 
 typedef enum{
     ZYMobileEncryption_0 = 0,//默认 base64
@@ -34,7 +34,7 @@ typedef enum{
  *
  *  @param userInfo 将其中的属性重新赋值
  */
--(void)needReLogin;
+-(void)needReLoginWithError:(ZYServiceError*)error;
 
 /**
  *  需要获取用户信息
