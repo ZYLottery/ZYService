@@ -37,7 +37,7 @@
  *  注意：为了节约消息体的空间，如接口未特殊指定时不返回此字段
  */
 
-@property(nonatomic,strong) NSString *messageLevel;
+@property(nonatomic,strong) NSString * messageLevel;
 
 /**
  提示信息窗口数据
