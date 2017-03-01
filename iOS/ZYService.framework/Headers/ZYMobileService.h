@@ -14,6 +14,7 @@
 #import "ZYMobileRequest.h"
 #import "ZYServiceUserInfo.h"
 #import "ZYMobileBaseInfo.h"
+#import "ZYMessageDataModel.h"
 
 typedef void(^MobileSuccessHandle) (ZYMobileResponse *response);
 typedef void(^MobileFailureHandle) (ZYServiceError *error);
@@ -49,6 +50,14 @@ typedef enum{
  *  @param sessionToken <#sessionToken description#>
  */
 -(void)userSessionTokenUpdate:(NSString*)sessionToken;
+
+
+/**
+ 需要实名认证
+
+ @param error <#error description#>
+ */
+-(void)needRealNameCertificationWithError:(ZYServiceError*)error;
 
 
 @end

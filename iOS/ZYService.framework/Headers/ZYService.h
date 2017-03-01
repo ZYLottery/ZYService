@@ -15,7 +15,7 @@
 #import "ZYMobileRequest.h"
 #import "ZYServiceError.h"
 #import "ZYMobileBaseInfo.h"
-
+#import "ZYMessageDataModel.h"
 #import "ZYQueryService.h"
 #import "ZYQueryBaseInfo.h"
 #import "ZYQueryResponse.h"

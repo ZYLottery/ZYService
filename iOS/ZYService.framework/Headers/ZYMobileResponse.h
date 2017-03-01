@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ZYServicePage.h"
-
+#import "ZYMessageDataModel.h"
 @interface ZYMobileResponse : NSObject
 
 /**
@@ -55,5 +55,8 @@
  */
 @property(nonatomic,strong) NSString *messageLevel;
 
-
+/**
+ 提示信息窗口数据
+ */
+@property(nonatomic,strong) ZYMessageDataModel * messageData;
 @end
