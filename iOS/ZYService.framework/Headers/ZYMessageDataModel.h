@@ -36,12 +36,17 @@
 /**
  图片高度
  */
-@property(nonatomic,copy)NSString * picHeight;
+@property(nonatomic,assign)float picHeight;
 
 /**
  图片宽度
  */
-@property(nonatomic,copy)NSString * picWidth;
+@property(nonatomic,assign)float picWidth;
+
+/**
+ 是否有 关闭按钮
+ */
+@property(nonatomic,assign)BOOL closable;
 
 /**
  主按钮文字
