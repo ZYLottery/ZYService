@@ -34,7 +34,10 @@
  *  服务器时间
  */
 @property(nonatomic,strong) NSString *timestamp;
-
+/**
+ *  建议跳转地址	建议返回地址（例如http地址或约定APP内页面路径），供客户端进行自动页面跳转使用
+ */
+@property(nonatomic,strong) NSString *redirect;
 /**
  *  提示信息的级别	返回数值越大则级别越高，具体针对不同级别的行为由客户端自行实现，可提供指导性规范
  *  注意：为了节约消息体的空间，如接口未特殊指定时不返回此字段

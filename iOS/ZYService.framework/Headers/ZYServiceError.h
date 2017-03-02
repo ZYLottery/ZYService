@@ -44,10 +44,4 @@
  */
 @property(nonatomic,strong) ZYMessageDataModel * messageData;
 
-/**
- *  建议跳转地址	建议返回地址（例如http地址或约定APP内页面路径），供客户端进行自动页面跳转使用
- */
-@property(nonatomic,strong) NSString *redirect;
-
-
 @end
