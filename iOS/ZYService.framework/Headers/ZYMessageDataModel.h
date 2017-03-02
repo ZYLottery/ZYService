@@ -56,4 +56,9 @@
  次按钮文字
  */
 @property(nonatomic,copy)NSString * secondaryButton;
+
+/**
+ 回传信息
+ */
+@property(nonatomic,copy)NSString * extraData;
 @end
