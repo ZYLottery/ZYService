@@ -59,7 +59,12 @@ typedef enum{
  */
 -(void)needRealNameCertificationWithError:(ZYServiceError*)error;
 
-
+/**
+ 需要绑定银行卡
+ 
+ @param error <#error description#>
+ */
+-(void)needBindingBankCardCertificationWithError:(ZYServiceError*)error;
 @end
 /**
   提示弹框和重定向协议
