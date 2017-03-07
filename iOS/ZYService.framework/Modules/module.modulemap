@@ -1,6 +1,0 @@
-framework module ZYService {
-  umbrella header "ZYService.h"
-
-  export *
-  module * { export * }
-}
