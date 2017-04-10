@@ -12,6 +12,10 @@
 @interface ZYMessageDataModel : NSObject
 
 /**
+ 消息id
+ */
+@property(nonatomic,copy)NSString * messageId;
+/**
  标题
  */
 @property(nonatomic,copy)NSString * title;
