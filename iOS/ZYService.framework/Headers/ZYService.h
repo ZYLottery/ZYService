@@ -19,7 +19,7 @@
 #import "ZYQueryService.h"
 #import "ZYQueryBaseInfo.h"
 #import "ZYQueryResponse.h"
-
+#import "ZYServiceMetaData.h"
 #import "ZYServiceEngine.h"
 
 //! Project version number for ZYService.

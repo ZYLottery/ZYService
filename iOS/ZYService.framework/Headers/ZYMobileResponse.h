@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ZYServicePage.h"
 #import "ZYMessageDataModel.h"
+#import "ZYServiceMetaData.h"
 @interface ZYMobileResponse : NSObject
 
 /**
@@ -59,4 +60,9 @@
  提示信息窗口数据
  */
 @property(nonatomic,strong) ZYMessageDataModel * messageData;
+
+/**
+ 响应附属信息
+ */
+@property(nonatomic,strong) ZYServiceMetaData * metaData;
 @end
