@@ -73,7 +73,7 @@ typedef enum{
 
 - (void)redirectPageWithRedirect:(NSString *)redirect;
 
-- (void)showAlertWithMessageLevel:(NSInteger)messageLevel andMessageData:(ZYMessageDataModel *) model;
+- (void)showAlertWithMessageLevel:(NSInteger)messageLevel andMessageData:(ZYMessageDataModel *) model withIsSuccess:(BOOL)isSuccess;
 @end
 @interface ZYMobileService : NSObject
 
