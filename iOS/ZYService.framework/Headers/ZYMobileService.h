@@ -92,6 +92,11 @@ typedef enum{
  */
 @property(nonatomic,strong) ZYMobileBaseInfo *baseInfo;
 
+/**
+ 当前请求页面的path
+ */
+@property(nonatomic,strong) NSString *referrer;
+
 
 
 /**
@@ -163,6 +168,10 @@ typedef enum{
    ignoreMessageWhenFail:(BOOL)ignoreMessageDataWhenFail
              successHandle:(MobileSuccessHandle)successHandle
              failureHandle:(MobileFailureHandle)failureHandle;
+
+
+
+
 
 
 
