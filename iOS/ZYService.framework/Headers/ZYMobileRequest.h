@@ -32,7 +32,7 @@
 /**
  请求附属信息
  */
-@property(nonatomic,strong) NSString *metaData;
+@property(nonatomic,strong) NSMutableDictionary *metaData;
 /**
  *  客户端信息，JSON对象，详见：客户端信息数据格式
  */
