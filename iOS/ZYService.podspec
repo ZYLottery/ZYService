@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "ZYService"
-s.version          = "0.0.5.9"
+s.version          = "0.0.6.0"
 s.summary          = "A marquee view used on iOS."
 s.description      = <<-DESC
 It is a marquee view used on iOS, which implement by Objective-C.
