@@ -28,6 +28,11 @@
  *  2：AES加密（AES_CBC_PKCS5PADDING）
  */
 @property(nonatomic,assign) int encrypt;
+
+/**
+ 请求附属信息
+ */
+@property(nonatomic,strong) NSMutableDictionary *metaData;
 /**
  *  客户端信息，JSON对象，详见：客户端信息数据格式
  */

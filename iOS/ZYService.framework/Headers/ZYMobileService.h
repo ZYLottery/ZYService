@@ -65,6 +65,14 @@ typedef enum{
  @param error <#error description#>
  */
 -(void)needBindingBankCardCertificationWithError:(ZYServiceError*)error;
+
+
+/**
+ 需要绑定手机
+ 
+ @param error <#error description#>
+ */
+-(void)needBindingPhoneWithError:(ZYServiceError*)error;
 @end
 /**
   提示弹框和重定向协议
@@ -91,6 +99,11 @@ typedef enum{
  *  mobile api 基础信息
  */
 @property(nonatomic,strong) ZYMobileBaseInfo *baseInfo;
+
+/**
+ 当前请求页面的path
+ */
+@property(nonatomic,strong) NSString *referrer;
 
 
 
@@ -163,6 +176,10 @@ typedef enum{
    ignoreMessageWhenFail:(BOOL)ignoreMessageDataWhenFail
              successHandle:(MobileSuccessHandle)successHandle
              failureHandle:(MobileFailureHandle)failureHandle;
+
+
+
+
 
 
 
