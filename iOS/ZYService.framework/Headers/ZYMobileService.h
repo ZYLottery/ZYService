@@ -179,7 +179,17 @@ typedef enum{
 
 
 
-
+-(void)postWithPatamerters:(NSMutableDictionary*)patamerters
+                    suffix:(NSString*)suffix
+                   command:(NSString*)command
+                   encrypt:(ZYMobileEncryption)encrypt
+                      page:(ZYServicePage*)page
+               timeOutTime:(int)timeOutTime
+                 needLogin:(BOOL)needLogin
+  ignoreMessageWhenSuccess:(BOOL)ignoreMessageDataWhenSuccess
+     ignoreMessageWhenFail:(BOOL)ignoreMessageDataWhenFail
+             successHandle:(MobileSuccessHandle)successHandle
+             failureHandle:(MobileFailureHandle)failureHandle;
 
 
 
