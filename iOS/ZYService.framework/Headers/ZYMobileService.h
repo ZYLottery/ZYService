@@ -59,6 +59,13 @@ typedef enum{
  */
 -(void)needRealNameCertificationWithError:(ZYServiceError*)error;
 
+
+/**
+ 余额不足
+ 
+ @param error <#error description#>
+ */
+-(void)lackOfBalanceWithError:(ZYServiceError*)error;
 /**
  需要绑定银行卡
  
