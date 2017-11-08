@@ -14,6 +14,13 @@
 
 typedef void(^QuerySuccessHandle) (ZYQueryResponse *response);
 typedef void(^QueryFailureHandle) (ZYServiceError *error);
+
+
+@protocol ZYQueryServiceDelegate<NSObject>
+@required
+-(ZYServiceUserInfo*)fetchUserInfo;
+
+@end
 /**
  重定向协议
  */
@@ -24,6 +31,11 @@ typedef void(^QueryFailureHandle) (ZYServiceError *error);
  *  mobile api 基础信息
  */
 @property(nonatomic,strong) ZYQueryBaseInfo *baseInfo;
+
+/**
+ 代理
+ */
+@property(weak,nonatomic) id<ZYQueryServiceDelegate> delegate;
 
 /**
  * 提示弹框 重定向 代理
