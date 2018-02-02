@@ -49,7 +49,7 @@
  *
  *  @param baseInfo <#baseInfo description#>
  */
--(void)initializeQueryService:(ZYQueryBaseInfo*)baseInfo;
+-(void)initializeQueryService:(ZYQueryBaseInfo*)baseInfo delegate:(id)delegate;
 
 
 @end
