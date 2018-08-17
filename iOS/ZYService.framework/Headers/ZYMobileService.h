@@ -80,6 +80,13 @@ typedef enum{
  @param error <#error description#>
  */
 -(void)needBindingPhoneWithError:(ZYServiceError*)error;
+
+/**
+ 需要切换域名
+ @param error <#error description#>
+ */
+-(void)needExchangeHost:(ZYServiceError*)error;
+
 @end
 /**
   提示弹框和重定向协议

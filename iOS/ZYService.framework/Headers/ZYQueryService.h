@@ -17,8 +17,18 @@ typedef void(^QueryFailureHandle) (ZYServiceError *error);
 
 
 @protocol ZYQueryServiceDelegate<NSObject>
+
 @required
+/**
+ 获取用户信息
+ */
 -(ZYServiceUserInfo*)fetchUserInfo;
+
+/**
+ 需要切换域名
+ @param error <#error description#>
+ */
+-(void)needExchangeHost:(ZYServiceError*)error;
 
 @end
 /**
