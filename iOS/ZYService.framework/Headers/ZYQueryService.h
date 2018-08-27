@@ -24,12 +24,6 @@ typedef void(^QueryFailureHandle) (ZYServiceError *error);
  */
 -(ZYServiceUserInfo*)fetchUserInfo;
 
-/**
- 需要切换域名
- @param error <#error description#>
- */
--(void)needExchangeHost:(ZYServiceError*)error;
-
 @end
 /**
  重定向协议
